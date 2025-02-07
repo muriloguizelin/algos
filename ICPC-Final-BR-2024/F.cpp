@@ -1,13 +1,32 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-//https://codeforces.com/group/8JufKtWW7p/contest/565415/problem/A
-// basicamente ele dá uma string S + o set de S, ou seja, string = s + set<s>, voce tem que devolver só o s, pra isso faça o set desse s e subtraia.
-int main(){
+
+int main() {
     cin.tie(0);
     ios::sync_with_stdio(0);
 
-    int n, k; string s = "*";
+    int k, n;
     cin >> k >> n;
-    
+
+    int k2 = k + k;
+    int k3 = k + k2;
+
+    if (n < k2 - 1 || k3 < n) {
+        cout << "*";
+    } else if (n == k2 - 1) {
+        for (int i = 0; i < k - 1; ++i) {
+            cout << "X-";
+        }
+        cout << "X";
+    } else {
+        for (int i = 0; i < k3 - n; ++i) {
+            cout << "X-";
+        }
+        for (int i = 0; i < n - k2; ++i) {
+            cout << "-X-";
+        }
+    }
+
+    return 0;
 }
