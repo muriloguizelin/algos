@@ -17,4 +17,4 @@ int main(){
             j++;
         }
         cout << ans;
-}
+} 
