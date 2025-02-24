@@ -1,8 +1,14 @@
+/**
+ * author: Murilo Guizelin
+ * date: 2025-02-18
+ * hour: 08:10:56
+ * Link: https://cses.fi/problemset/task/1068
+ */
 #include <iostream>
 using namespace std;
 
 int main() {
-    int n;
+    long long n;
     cin >> n;
     
     while (n != 1) {

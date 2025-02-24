@@ -1,3 +1,10 @@
+/**
+ * author: Murilo Guizelin
+ * date: 2025-02-18
+ * hour: 08:11:55
+ * Link: https://cses.fi/problemset/task/1083
+ */
+
 #include <iostream>
 #include <vector>
 using namespace std;
