@@ -3,7 +3,8 @@
 typedef long long ll;
 
 using namespace std;
-//algoritmo O(n^2), todos os elementos são acessados e verificados se estão corretos
+// Algoritmo de complexidade O(n^2), onde todos os elementos do vetor são acessados e comparados repetidamente.
+// O objetivo é garantir que cada par de elementos adjacentes esteja na ordem correta, realizando trocas quando necessário.
 int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);

@@ -1,20 +1,23 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
-int main() {
-    int n;
-    cin >> n;
-    string s;
-    cin >> s;
-    
-    int count = 0;
-    for (int i = 1; i < n; i++) {
-        if (s[i] == s[i - 1]) {
-            count++;
-        }
+vector<int> solution(vector<int> &A, int K) {
+    for(int i=0;i<K;i++){
+        int last = A[A.size()-1];
+        int slast = A[A.size()-2];
+        A.insert(A.begin(), last);
+        A.pop_back();
+        A[A.size()-1] = slast;
     }
-    
-    cout << count << "\n";
-    return 0;
+    return A;
+}
+
+int main(){
+vector<int> A = {0, 0, 0, 1};
+vector<int> result = solution(A, 4);
+for (int i : result) {
+    cout << i << " ";
+}
 }
