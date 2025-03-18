@@ -6,6 +6,8 @@ typedef long long ll;
 int main(){
     int T;
     ll X, Y; //declara x e y como long pelas constraints do exercicio
+    ll x = 1e9;
+    cout << x;
 
     cin >> T;
     for(int t = 0; t < T; t++){
