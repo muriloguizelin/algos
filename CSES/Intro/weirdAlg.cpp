@@ -4,6 +4,11 @@
  * hour: 08:10:56
  * Link: https://cses.fi/problemset/task/1068
  */
+
+/*
+Recebe um valor N e deve iterar ele ate que seja 1, 
+caso ele seja impar multiplique por 3 e some 1 e caso seja par divida por dois.
+*/
 #include <iostream>
 using namespace std;
 

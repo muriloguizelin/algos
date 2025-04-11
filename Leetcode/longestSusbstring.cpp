@@ -1,7 +1,11 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-
+/*
+Dois ponteiros que começam em 0, eles vão andando e adicionando valores no set e depois removendo, o que acontece é que 
+se já houver o valor no set ele vai substituir e seguir a vida, ele remove o valor inicial no set
+até que remova o valor encontrado, ou seja nao importa a ordem
+*/
 int main(){
     string s;
     cin >> s;
