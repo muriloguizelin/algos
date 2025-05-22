@@ -5,6 +5,20 @@
  * Link: https://leetcode.com/problems/find-numbers-with-even-number-of-digits/description/
  */
 
+
+class Solution {
+public:
+    vector<int> runningSum(vector<int>& nums) {
+        vector<int> x;
+        int soma = 0;
+        for(auto y:nums){
+            soma += y;
+            x.push_back(soma);
+        }
+        return x;
+    }
+};
+
 class Solution {
 public:
     int findNumbers(vector<int>& nums) {

@@ -1,9 +1,16 @@
+/**
+ * author: Murilo Guizelin
+ * date: 2025-05-21
+ * hour: 19:20:50
+ * Link: https://leetcode.com/problems/baseball-game/
+ */
+
 class Solution {
     public:
         int calPoints(vector<string>& operations) {
             stack<int> pilha;
             int len = operations.size();
-            for(int i=0;i<len;i++){
+            for(auto x : operations){
                 string x = operations[i];
                 if(x == "+"){
                     int topoAtual = pilha.top();
