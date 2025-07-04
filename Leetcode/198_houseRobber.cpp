@@ -21,6 +21,27 @@ public:
     }
 };
 
+// Usando TOP-DOWN
+class Solution {
+public:
+    int memo[101];
+    int n;
+    vector<int> lucro;
+
+    int f(int i) {
+        if (i >= n) return 0;
+        if (memo[i] != -1) return memo[i];
+        return memo[i] = max(f(i + 1), lucro[i] + f(i + 2));
+    }
+
+    int rob(vector<int>& nums) {
+        n = nums.size();
+        lucro = nums;
+        memset(memo, -1, sizeof(memo));
+        return f(0);
+    }
+};
+
 class Solution {
 public:
     int rob(vector<int>& nums) {
