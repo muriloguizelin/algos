@@ -5,8 +5,6 @@
  * Link: https://leetcode.com/problems/unique-paths/description/
  */
 
-
-
 class Solution {
 public:
     int uniquePaths(int m, int n) {
