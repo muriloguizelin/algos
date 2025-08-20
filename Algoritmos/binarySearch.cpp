@@ -4,7 +4,7 @@ using namespace std;
 //tempo O(log n), ja que ele itera pela metade da lista no maximo
 int main(){
     vector<int> v = {9, 3, 2, -1, 5, 11};
-    int size = v.size(), target, res = -1, it = 1;
+    int size = v.size(), target, res = -1, it = 0;
     cin >> target;
     sort(v.begin(), v.end());
     int left = 0, right = size - 1;
