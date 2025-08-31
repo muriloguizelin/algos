@@ -4,7 +4,9 @@
  * hour: 18:00:36
  * Link: https://leetcode.com/problems/is-graph-bipartite/
  */
+/* bfs (queue, color, graph (lista), node inicial), se a cor for -1 entao pintar, se ela nao for -1, ela vai ser 1 ou 0, se for igual entao é falso.
 
+*/
 class Solution {
 public:
     bool bfs(vector<vector<int>>& graph, int start, vector<int>& color) {
@@ -20,8 +22,7 @@ public:
                     color[v] = 1 - color[u];
                     q.push(v);
                 } else if (color[v] == color[u]) {
-                    // vizinhos com a mesma cor → não bipartido
-                    return false;
+                    return false; // vizinhos com a mesma cor → não bipartido
                 }
             }
         }
