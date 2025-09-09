@@ -10,7 +10,7 @@ int main() {
     vector<int> v(n);
     for(int i = 0; i < n; i++) cin >> v[i];
 
-    unordered_map<int,int> freq; // mapa de contagem
+    unordered_map<int,int> freq;
     int maxLen = 0, left = 0;
 
     for(int right = 0; right < n; right++) {
