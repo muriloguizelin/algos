@@ -5,7 +5,6 @@
  * Link: https://maratona.sbc.org.br/primfase24/contest-pf2024/maratona.pdf
  */
 
-A, E, F, H, K, L
 #include <bits/stdc++.h>
 
 using namespace std;

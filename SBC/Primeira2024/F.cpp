@@ -20,7 +20,6 @@
          long long temp = a;
          a = b;
          b += temp;
-         cout << a << endl;
      }
      
      cout << a << endl;
